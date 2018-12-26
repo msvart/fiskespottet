@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta charset="UTF-8">
+<h3>Vælg lokation</h3>
+
+Sjælland: <input type="checkbox" id="Sjælland">
+Jylland: <input type="checkbox" id="Jylland">
+Fyn: <input type="checkbox" id="Fyn">
+
+<h4>Vælg type</h4>
+
+Kyst: <input type="checkbox" id="kyst">
+Sø: <input type="checkbox" id="Sø">
+Put and Take: <input type="checkbox" id="Pat">
+
+<button onclick="myFunction()">FIND FISKESPOT!</button>
+
+<script>
 function myFunction() {
   var checkboxSjælland = document.getElementById('Sjælland');
   var checkboxJylland = document.getElementById('Jylland');
@@ -30,3 +49,7 @@ function myFunction() {
     console.log('Intet valgt!');
   }
 };
+</script>
+
+</body>
+</html>
