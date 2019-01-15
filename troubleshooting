@@ -4,69 +4,6 @@
 <meta charset="UTF-8">
 <h3>Vælg lokation</h3>
 
-Sjælland: <input type="checkbox" id="Sjælland">
-Jylland: <input type="checkbox" id="Jylland">
-Fyn: <input type="checkbox" id="Fyn">
-
-<h4>Vælg type</h4>
-
-Kyst: <input type="checkbox" id="kyst">
-Sø: <input type="checkbox" id="Sø">
-Put and Take: <input type="checkbox" id="Pat">
-
-<button onclick="myFunction()">FIND FISKESPOT!</button>
-
-<script>
-function myFunction() {
-  var checkboxSjælland = document.getElementById('Sjælland');
-  var checkboxJylland = document.getElementById('Jylland');
-  var checkboxFyn = document.getElementById('Fyn');
-
-  var checkBoxKyst = document.getElementById('kyst');
-  var checkBoxSø = document.getElementById('Sø');
-  var checkBoxPat = document.getElementById('Pat')
-  var text = document.getElementById("text");
-
-  if (checkBoxKyst.checked == true && checkBoxSjælland) {
-    window.location.replace("http://www.w3schools.com");
-  } else if (checkBoxKyst.checked == true && checkBoxJylland) {
-    window.location.replace("http://www.w3schools.com");
-  } else if (checkBoxKyst.checked == true && checkBoxFyn){
-    window.location.replace("http://www.w3schools.com");
-  } else if (checkBoxSø.checked == true && checkBoxSjælland) {
-    window.location.replace("http://www.facebook.com");
-  } else if (checkBoxSø.checked == true && checkBoxJylland) {
-    window.location.replace("http://www.facebook.com");
-  } else if (checkBoxSø.checked == true && checkBoxFyn) {
-    window.location.replace("http://www.facebook.com");
-  } else if (checkBoxPat.checked == true && checkBoxSjælland) {
-    window.location.replace("http://google.dk");
-  } else if (checkBoxPat.checked == true && checkBoxJylland) {
-    window.location.replace("http://google.dk");
-  } else if (checkBoxPat.checked == true && checkBoxFyn) {
-    window.location.replace("http://google.dk");
-  } else {
-    console.log('Intet valgt!');
-  }
-};
-</script>
-
-</body>
-
-
-
-
-Eller denne løsning:
-
-
-
-
-<!DOCTYPE html>
-<html>
-<body>
-<meta charset="UTF-8">
-<h3>Vælg lokation</h3>
-
 Sjælland: <input type="checkbox" id="Sjlland">
 Jylland: <input type="checkbox" id="Jylland">
 Fyn: <input type="checkbox" id="Fyn">
@@ -97,11 +34,10 @@ function myFunction() {
   } else if (checkBoxPat.checked == true && checkBoxSjlland || checkBoxPat.checked == true && checkBoxJylland || checkBoxPat.checked == true && checkBoxFyn) {
     window.location.replace("http://google.dk");
   } else {
-    window.location.replace("http://hostworld.dk");
+    window.location.replace("<ht></ht>tp://hostworld.dk");
   }
 };
 </script>
 
 </body>
-</html>
 </html>
